@@ -1,0 +1,6 @@
+# Unignore everything
+!*
+
+# Save data that should not be here!
+multihotbar.json
+treespirit.json
