@@ -3,3 +3,6 @@
 # Unignore
 !.gitignore
 !/config/
+!llibrary/
+!resources/
+!scripts/

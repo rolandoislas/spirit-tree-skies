@@ -1,0 +1,1801 @@
+{
+  "questSettings": {
+    "betterquesting": {
+      "livesdef": 3,
+      "home_anchor_y": 0,
+      "livesmax": 10,
+      "home_anchor_x": 0.5,
+      "editmode": false,
+      "hardcore": false,
+      "home_image": "betterquesting:textures/gui/default_title.png",
+      "home_offset_x": -128,
+      "home_offset_y": 0
+    }
+  },
+  "questDatabase": [
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "skyresources:baseitemcomponent",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 2
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Premium Dirt",
+          "desc": "Throw some plant matter into the combustion heater."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "skyresources:baseitemcomponent",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 2
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        10
+      ],
+      "questID": 0
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "visibility": "NORMAL",
+          "simultaneous": false,
+          "icon": {
+            "id": "treespirit:sapling",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 1
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Become a Tree Spirit",
+          "desc": "Become a tree spirit by planting an elder sapling."
+        }
+      },
+      "tasks": [
+        {
+          "blocks": [
+            {
+              "blockID": "treespirit:log",
+              "meta": -1,
+              "nbt": {},
+              "amount": 1,
+              "oreDict": ""
+            }
+          ],
+          "taskID": "bq_standard:block_break",
+          "index": 1
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [],
+      "questID": 1
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "treespirit:grass",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "The Grass is Greener",
+          "desc": "Growing saplings on the core is no fun. Make some grass to really live the dream of being a twerking tree spirit."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": false,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "treespirit:grass",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "treespirit:grass",
+              "Count": 10,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        1
+      ],
+      "questID": 2
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "treespirit:core",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "To the Core!",
+          "desc": "Upgrade your core by giving it more cores."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": false,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "treespirit:core",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 1
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        1
+      ],
+      "questID": 3
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:carrot",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "A Caring Tree",
+          "desc": "Don\u0027t ever say your tree didn\u0027t do anything nice for you."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": true,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "treespirit:essence",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "touchofbeacon:food",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        },
+        {
+          "choices": [
+            {
+              "id": "touchofbeacon:food",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 11
+            },
+            {
+              "id": "touchofbeacon:food",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 10
+            }
+          ],
+          "rewardID": "bq_standard:choice",
+          "index": 1
+        }
+      ],
+      "preRequisites": [
+        1
+      ],
+      "questID": 4
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "visibility": "NORMAL",
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:water_bucket",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "It\u0027s so Dry up Here",
+          "desc": "From §mnothing§ §r leaves, logs, grass, saplings, and the like, a water extractor can aid in the collection of that precious liquid."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": true,
+          "requiredItems": [
+            {
+              "id": "skyresources:waterextractor",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        1
+      ],
+      "questID": 5
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:sapling",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Enough of these Spirit Trees",
+          "desc": "Spirit tree are great, but sometimes oak just looks so appealing.\n\nExtract water from a spirit tree sapling."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:sapling",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 1
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        1
+      ],
+      "questID": 6
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:tnt",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "End the Violence",
+          "desc": "Kill a creeper or combine flint and spirit tree essence."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:gunpowder",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "chancecubes:chance_cube",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "chancecubes:chance_icosahedron",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:choice",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        1
+      ],
+      "questID": 7
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "birdsnests:birdsnest",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Silly bird, nests are for eggs.",
+          "desc": "Chop down a few trees and find a displaced home.\n\nYou monster."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": false,
+          "ignoreNBT": true,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": true,
+          "requiredItems": [
+            {
+              "id": "birdsnests:birdsnest",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        6
+      ],
+      "questID": 8
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "skyresources:dirtfurnace",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "The Cheap Start",
+          "desc": "Dirt and gunpower? Light it on fire."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "skyresources:dirtfurnace",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [],
+      "questID": 9
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "skyresources:combustionheater",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "A Better Fire",
+          "desc": "Throw that dirt furncance in the trash slot.\n\nPlace the planks around an empty space atop the combusion heater."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "skyresources:combustionheater",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [],
+      "questID": 10
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "toughasnails:campfire",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "It\u0027s Too Cold",
+          "desc": "Being to cold might result in your death."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "toughasnails:campfire",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        14
+      ],
+      "questID": 11
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:water_bucket",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "It\u0027s Too Hot",
+          "desc": "Death by §mbeing cooked to perfection§r excessive heat is a problem on the skyblock.\n\nTake a swim in a lake made from harvested water."
+        }
+      },
+      "tasks": [
+        {
+          "taskID": "bq_standard:checkbox",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        5
+      ],
+      "questID": 12
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:lava_bucket",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Magma!",
+          "desc": "Don\u0027t throw anything except dolomite in there.\n\nPlace a torch under a blaze power block."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "skyresources:blazepowderblock",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        10
+      ],
+      "questID": 13
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:cobblestone",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "The Best Block",
+          "desc": "When lava and water love each other very much..."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:cobblestone",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        5,
+        13
+      ],
+      "questID": 14
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "touchofbeacon:beacon",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Too Much Spice",
+          "desc": "Is there too much spice in your life?\n\nMake a beacon that will feed you and place it on top of a §ofood block§r."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "touchofbeacon:beacon",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "touchofbeacon:food",
+              "Count": 1,
+              "OreDict": "blockFood",
+              "Damage": 11
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 1
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "chancecubes:chance_cube",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "chancecubes:chance_icosahedron",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:choice",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        4
+      ],
+      "questID": 15
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "harvestcraft:toastitem",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Toast",
+          "desc": "Make toast."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "harvestcraft:toastitem",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "cookingforblockheads:toaster",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [],
+      "questID": 16
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "treespirit:mushroom_builder",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "One Big Mushroom",
+          "desc": "Resources in the sky based on mob drops? Where are my sieves?\n\nTo aid any skyblock adventures §oTree Spirit§r adds a block that will create a basic mob farm."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:gunpowder",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "treespirit:mushroom_builder",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [],
+      "questID": 17
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "toughasnails:water_bottle",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "I\u0027m Thirsty",
+          "desc": "You mean stagnant water is not clean?"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "toughasnails:water_bottle",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        12,
+        21
+      ],
+      "questID": 18
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "toughasnails:water_bottle",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 1
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Less Dirty",
+          "desc": "Almost parasite free."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "toughasnails:water_bottle",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 1
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        18
+      ],
+      "questID": 19
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:potion",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0,
+            "tag": {
+              "Potion:8": "minecraft:water"
+            }
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "High Quality H2O",
+          "desc": "M-m-modpacker maker says, \"if you are going to play foosball wear a full set of body armor\"."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:potion",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "Potion:8": "minecraft:water"
+              }
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "minecraft:leather_helmet",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:leather_chestplate",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:leather_leggings",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:leather_boots",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        19
+      ],
+      "questID": 20
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:sand",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Grinder",
+          "desc": "Tweark with trees grind with rocks."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "skyresources:stonegrinder",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        14
+      ],
+      "questID": 21
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:cactus",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "It Hurts so Good",
+          "desc": "A li\u0027l cactus."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:cactus",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "skyresources:alchemyitemcomponent",
+              "Count": 10,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item",
+          "index": 0
+        }
+      ],
+      "preRequisites": [],
+      "questID": 22
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:reeds",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Needs More Salt",
+          "desc": "How sweet."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:reeds",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "amount": 10,
+          "isLevels": true,
+          "rewardID": "bq_standard:xp",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        24
+      ],
+      "questID": 23
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:clock",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Life",
+          "desc": "Dog?"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "skyresources:sandstoneinfusionstone",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        21,
+        22
+      ],
+      "questID": 24
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:iron_ingot",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "A Good Source of Iron",
+          "desc": "Even zombies can make iron.\n\n\nC \u003d Crucible\nD \u003d Dropper\nA \u003d Condenser\n- \u003d Air\nT \u003d Torch\n\nC D      Sky\nT D\n- -\n- A\n- T      Floor"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "skyresources:crucible",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "skyresources:alchemicalcondenser",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "skyresources:fluiddropper",
+              "Count": 2,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "skyresources:metalcrystal",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        14
+      ],
+      "questID": 25
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "skyresources:techitemcomponent",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Crush that Stone",
+          "desc": "It threatened you!"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "skyresources:techitemcomponent",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        21
+      ],
+      "questID": 26
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "techreborn:dust",
+            "Count": 4,
+            "OreDict": "",
+            "Damage": 27
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Bubble Bath",
+          "desc": "Make the dust silky smooth."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:cauldron",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:water_bucket",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        26,
+        25
+      ],
+      "questID": 27
+    }
+  ],
+  "questLines": [
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "Tree Spirit",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": "Not all trees have a spirit to watch over them, many die to old age, drought or flood, disease or flames, and many other (un)natural causes. But some trees, do have a guardian spirit, they are blessed by your presence. You shall make it grow and prosper, spread your roots far and wide, eventually shadow over all the other trees and become a monument in itself.\n\nIn this challenge you take on the role of a trees very essence. You will become a dryad, a tree spirit, a tree\u0027s soul, the God in the tree. It has many names, but common to them all is this: They can never leave the tree, and if one of them dies, so does the other. And just as a tree\u0027s reach is limited by the height of it\u0027s branches and it\u0027s length of it\u0027s roots, so is a tree spirit limited. You will become an extension of the tree, just as it becomes an extension of you. The spirit will direct the growth of the tree, digging roots to valuable minerals and precious water, branching out to bask in the sun.\n\nBut remember, you are not alone in this world, the tree spirit can never rest. It must protect it\u0027s tree from all things. The darkness brings nests of spiders, the extremely dangerous Creepers, maybe even other tree spirits - everything is a potential threat. Even when they are gone, a single spark of flame can reduce a spirit to ash, and sometimes even the sky itself will try to erase your very existence.\n\nHow will you survive?\n\n-Lilariel (Minecraft Forum)"
+        }
+      },
+      "quests": [
+        {
+          "size": 36,
+          "x": -18,
+          "y": 0,
+          "id": 1
+        },
+        {
+          "size": 24,
+          "x": 6,
+          "y": 42,
+          "id": 2
+        },
+        {
+          "size": 24,
+          "x": 30,
+          "y": 6,
+          "id": 3
+        },
+        {
+          "size": 24,
+          "x": -30,
+          "y": 42,
+          "id": 4
+        }
+      ],
+      "lineID": 0,
+      "order": 0
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "Skyblock\u0027s New Groove",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": "Sieves? Who need sieves? Not this tree spirit. (More info with \"G\")"
+        }
+      },
+      "quests": [
+        {
+          "size": 24,
+          "x": -30,
+          "y": 96,
+          "id": 0
+        },
+        {
+          "size": 36,
+          "x": -18,
+          "y": 12,
+          "id": 5
+        },
+        {
+          "size": 24,
+          "x": -144,
+          "y": 90,
+          "id": 6
+        },
+        {
+          "size": 24,
+          "x": -114,
+          "y": 60,
+          "id": 7
+        },
+        {
+          "size": 24,
+          "x": -144,
+          "y": 60,
+          "id": 8
+        },
+        {
+          "size": 24,
+          "x": -48,
+          "y": 60,
+          "id": 9
+        },
+        {
+          "size": 24,
+          "x": -12,
+          "y": 60,
+          "id": 10
+        },
+        {
+          "size": 24,
+          "x": 6,
+          "y": 96,
+          "id": 13
+        },
+        {
+          "size": 24,
+          "x": 24,
+          "y": 60,
+          "id": 14
+        },
+        {
+          "size": 24,
+          "x": -114,
+          "y": 90,
+          "id": 17
+        },
+        {
+          "size": 24,
+          "x": 60,
+          "y": 60,
+          "id": 21
+        },
+        {
+          "size": 24,
+          "x": 108,
+          "y": 24,
+          "id": 22
+        },
+        {
+          "size": 24,
+          "x": 144,
+          "y": 42,
+          "id": 23
+        },
+        {
+          "size": 24,
+          "x": 108,
+          "y": 60,
+          "id": 24
+        },
+        {
+          "size": 24,
+          "x": 42,
+          "y": 96,
+          "id": 25
+        },
+        {
+          "size": 24,
+          "x": 78,
+          "y": 96,
+          "id": 26
+        },
+        {
+          "size": 24,
+          "x": 60,
+          "y": 132,
+          "id": 27
+        }
+      ],
+      "lineID": 1,
+      "order": 1
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "Tough as Nails",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": "You might die and now more things are here to kill you."
+        }
+      },
+      "quests": [
+        {
+          "size": 24,
+          "x": -30,
+          "y": 48,
+          "id": 18
+        },
+        {
+          "size": 24,
+          "x": -48,
+          "y": 78,
+          "id": 19
+        },
+        {
+          "size": 24,
+          "x": -12,
+          "y": 78,
+          "id": 20
+        },
+        {
+          "size": 24,
+          "x": -30,
+          "y": 12,
+          "id": 11
+        },
+        {
+          "size": 24,
+          "x": 6,
+          "y": 12,
+          "id": 12
+        }
+      ],
+      "lineID": 2,
+      "order": 2
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "All the Food",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": "Eat eat. Or don\u0027t."
+        }
+      },
+      "quests": [
+        {
+          "size": 24,
+          "x": -30,
+          "y": 12,
+          "id": 16
+        },
+        {
+          "size": 24,
+          "x": 6,
+          "y": 12,
+          "id": 15
+        }
+      ],
+      "lineID": 3,
+      "order": 3
+    }
+  ],
+  "format": "1.0.0"
+}

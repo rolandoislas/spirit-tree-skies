@@ -1,0 +1,1 @@
+recipes.removeShaped(<morefuelsmod-1.11.x:pelletsfuel>, [[<minecraft:blaze_powder>, <minecraft:blaze_powder>, <minecraft:blaze_powder>], [<minecraft:blaze_powder>, <minecraft:blaze_powder>, <minecraft:blaze_powder>], [<minecraft:blaze_powder>, <minecraft:blaze_powder>, <minecraft:blaze_powder>]]);

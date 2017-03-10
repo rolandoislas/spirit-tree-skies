@@ -1,0 +1,1 @@
+recipes.addShapeless(<minecraft:gunpowder>, [<treespirit:essence>, <minecraft:flint>]);

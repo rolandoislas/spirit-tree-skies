@@ -4,3 +4,10 @@
 # Save data that should not be here!
 multihotbar.json
 treespirit.json
+jei/worldSettings.cfg
+betterachievements/*toUnlockAchievements.dat
+
+# Configs that update the date
+MouseTweaks.cfg
+InvTweaks.cfg
+splash.properties
