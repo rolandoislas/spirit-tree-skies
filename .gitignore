@@ -2,6 +2,7 @@
 *
 # Unignore
 !.gitignore
+!readme.md
 !/config/
 !llibrary/
 !resources/
